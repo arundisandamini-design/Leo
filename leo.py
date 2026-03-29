@@ -29,7 +29,7 @@ from collections import Counter
 # ── Gemini setup ─────────────────────────────────────────────────────────────
 try:
     import google.generativeai as genai
-    _KEY = st.secrets.get("GEMINI_API_KEY", "")
+    _KEY = st.secrets.get("GEMINI_API_KEY", AIzaSyAg1M-RGeWISz5s8t8iOxGLrTAPmna4q2Y"")
     if _KEY:
         genai.configure(api_key=_KEY)
     AI_OK = bool(_KEY)
