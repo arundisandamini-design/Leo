@@ -21,7 +21,7 @@
 ╚══════════════════════════════════════════════════════════╝
 """
 
-import streamlit as st
+import streamlit as st 
 import streamlit.components.v1 as components
 import datetime, math, random, base64, io, re
 from collections import Counter
@@ -29,7 +29,7 @@ from collections import Counter
 # ── Gemini setup ─────────────────────────────────────────────────────────────
 try:
     import google.generativeai as genai
-    _KEY = st.secrets.get("GEMINI_API_KEY", AIzaSyAg1M-RGeWISz5s8t8iOxGLrTAPmna4q2Y"")
+    _KEY = st.secrets.get("GEMINI_API_KEY","")
     if _KEY:
         genai.configure(api_key=_KEY)
     AI_OK = bool(_KEY)
